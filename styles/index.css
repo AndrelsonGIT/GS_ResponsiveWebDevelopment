@@ -152,11 +152,9 @@ body {
 }
 .principal-extra-paragrafo-button:hover{
     background-color: var(--cor-terciaria);
-    color: var(--cor-terciaria);
-}   
-.principal-extra-paragrafo:hover p{
     color: var(--cor-principal);
-}
+}   
+
 .principal-texto{
 
     gap: 1vw;
