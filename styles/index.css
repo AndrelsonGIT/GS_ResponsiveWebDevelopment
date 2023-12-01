@@ -1,0 +1,239 @@
+@import url('https://fonts.cdnfonts.com/css/metropolis-2');
+@import "varCores.css";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 500;
+}
+.flex-box{
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body {
+    position: relative;
+    min-height: 130vh;
+    width: 100vw;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-principal);
+}
+/* .titulo-principal{
+    cursor: pointer;
+} */
+.cabecalho {
+    width: 100vw;
+    min-height: 9vh;
+    max-height: 9vh;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.cabecalho-titulo{
+    position: absolute;
+    left: 0;
+    margin-left: 5vw;
+}
+.cabecalho-titulo h2{
+    color: var(--cor-quartenaria);
+    font-weight: 700;
+}
+.cabecalho-nav a{
+    color: var(--cor-terciaria);
+    font-size: x-large;
+}
+.cabecalho-nav {
+    display: flex;
+    gap: 2rem;
+    margin-right: 5vw;
+}
+.cabecalho-nav-itens-1{
+    width: 105vw;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+.cabecalho-nav-itens-2{
+    display: flex;
+    gap: 3vw;
+    position: absolute;
+    right: 0;
+    margin-right: 3vw;
+}
+.hamburguer-menu{
+    position: absolute;
+    right: 0;
+}
+.cabecalho-nav li{
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 1000px){
+    .hamburguer-menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px){
+
+    .cabecalho-nav li {
+        display: none;
+    }
+    .hamburguer-menu img{
+        width: 6vw;
+        padding: 5vw;
+    }
+    @media screen and (max-width: 600px){
+        .hamburguer-menu img{
+            width: 10vw;
+        }
+    }
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+}
+.principal h1{
+    font-size: 3rem;
+}
+.principal-extra-container{
+    padding: 5vw;
+    width: 100vw;
+    min-height:1vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+
+    border: 5px solid;
+    border-image: linear-gradient(to right, #00FF00, #414d41, #00FF00) 1;
+    border-image-slice: 1;
+
+    backdrop-filter: blur(300px); 
+}
+.principal-extra-container-links{
+    display: flex;
+    padding-top: 1.5em;
+    gap: 1vw;
+}
+.principal-extra-paragrafo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principal-extra-paragrafo-button{  
+	background: transparent;
+	border: 2px solid var(--cor-terciaria);
+	border-radius: 0;
+	color: #111;
+	display: inline-block;
+	font-size: .9em;
+	font-weight: 700;
+    width: 15em;
+	height: 5em;
+	line-height: 20px;
+	overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.principal-extra-paragrafo-button:hover{
+    background-color: var(--cor-terciaria);
+    color: white;
+}   
+.principal-extra-paragrafo:hover p{
+    color: white;
+}
+.principal-texto{
+
+    gap: 1vw;
+    width: 60vw;
+    margin: 0 15vw;
+
+}
+.principal-texto h2{
+    font-size: xx-large;
+}
+.rodape {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 9vh;
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rodape-icone{
+    display: flex;
+    position: absolute;
+    left: 0;
+    color: var(--cor-quartenaria);
+    margin-left: 1vw;
+}
+.rodape-nomes{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+@media screen and (max-width: 1130px){
+    .rodape{
+        padding-top: 2vw;
+        padding-bottom: 2vh;
+        flex-direction: column;
+    }
+    .rodape-icone{
+
+        position: static;
+        flex-direction: column;
+
+    }
+    .rodape-icone{
+
+    }
+    .rodape-nomes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 3vw;
+    }
+    body{
+        height: 130vh;
+    }
+}
+
+.menu-mobile {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #6CB52D;
+    width: 100%;
+    flex-direction: column;
+}
+
+#toggleButton{
+    padding: 10px;
+    background-color: #6CB52D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
