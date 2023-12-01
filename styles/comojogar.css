@@ -10,14 +10,6 @@
     display: flex;
 }
 
-:root{
-    --cor-principal: #ffff;
-    --cor-secundaria: #EBF2F2;
-    --cor-terciaria: black;
-    --cor-quartenaria: #6CB52D;
-    --tamanho-fonte: 16px;
-}
-
 a {
     text-decoration: none;
 }
@@ -35,7 +27,7 @@ button{
 }
 body {
     position: relative;
-    min-height: 130vh;
+    min-height: 150vh;
     width: 100vw;
     color: var(--cor-terciaria);
     background-color: var(--cor-principal);
@@ -62,7 +54,7 @@ body {
     font-weight: 700;
 }
 .cabecalho-nav a{
-    color: black;
+    color: var(--cor-terciaria);
     font-size: x-large;
 }
 .cabecalho-nav {
@@ -116,7 +108,6 @@ body {
     flex-direction: column;
     gap: 2vh;
     align-items: center;
-    margin-top: 1.8vw;
 }
 .principal h1{
     font-size: 3rem;
@@ -173,6 +164,7 @@ body {
     text-align: justify-all;
     gap: 1vw;
     width: 60vw;
+    margin-top: 2vw;
     /*margin: 50vh 15vw;*/
 
 }
@@ -231,9 +223,15 @@ body {
         gap: 3vw;
     }
     body{
-        height: 300vw;
+        min-height: 400vw;
     }
 }
+@media screen and (max-width: 540px) {
+    body{
+        min-height: 5800vw;
+    }
+}
+
 main .toggleButton{
     display: flex;
     position: absolute;

@@ -140,7 +140,7 @@ body {
 	background: transparent;
 	border: 2px solid var(--cor-terciaria);
 	border-radius: 0;
-	color: #111;
+	color: var(--cor-terciaria);
 	display: inline-block;
 	font-size: .9em;
 	font-weight: 700;
@@ -152,10 +152,10 @@ body {
 }
 .principal-extra-paragrafo-button:hover{
     background-color: var(--cor-terciaria);
-    color: white;
+    color: var(--cor-terciaria);
 }   
 .principal-extra-paragrafo:hover p{
-    color: white;
+    color: var(--cor-principal);
 }
 .principal-texto{
 

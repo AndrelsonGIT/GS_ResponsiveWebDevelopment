@@ -12,8 +12,18 @@ let buttonTheme = document.querySelector("#toggleButton")
 buttonTheme.addEventListener('click', changeColor)
 
 document.addEventListener('DOMContentLoaded', ()=>{
-    if(corTema=='escuro'){
-
+    let corTema = localStorage.getItem('tema')
+    if(corTema=='branco'){
+        document.documentElement.style.setProperty('--cor-principal', '#ffff');
+        document.documentElement.style.setProperty('--cor-secundaria', '#EBF2F2');
+        document.documentElement.style.setProperty('--cor-terciaria', 'black');
+        document.documentElement.style.setProperty('--cor-quartenaria', '#6CB52D');
+    }
+    else{
+        document.documentElement.style.setProperty('--cor-principal', '#1B1F23');
+        document.documentElement.style.setProperty('--cor-secundaria', '#262A2D');
+        document.documentElement.style.setProperty('--cor-terciaria', 'white');
+        document.documentElement.style.setProperty('--cor-quartenaria', 'white');
     }
 })
 

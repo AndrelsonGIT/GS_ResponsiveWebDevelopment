@@ -54,7 +54,7 @@ body {
     font-weight: 700;
 }
 .cabecalho-nav a{
-    color: black;
+    color: var(--cor-terciaria);
     font-size: x-large;
 }
 .cabecalho-nav {
@@ -131,7 +131,7 @@ body {
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid var(--cor-terciaria);
     border-radius: 5%;
     padding: 70px 20px;
     width: 370px;
@@ -181,7 +181,7 @@ body {
     gap: 20px;
 }
 .principal__container__ideias__cabecalho__persoA img{
-    border: 2px solid black;
+    border: 2px solid var(--cor-terciaria);
     border-radius: 4%;
 }
 .foto{
@@ -242,20 +242,18 @@ body {
 }
 
 
-main .toggleButton{
+main{
+    width: 100vw;
     display: flex;
     position: absolute;
-    width: 3vw;
-    left: 50%;
-    right: 50%;
-
+    align-items: center;
+    flex-direction: column;
 }
 #toggleButton{
-    padding: 5px;
+    padding: 10px;
     background-color: #6CB52D;
     color: white;
     border: none;
     border-radius: 5px;
-
     cursor: pointer;
 }
