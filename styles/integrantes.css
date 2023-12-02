@@ -27,7 +27,7 @@ button{
 }
 body {
     position: relative;
-    min-height: 130vh;
+    min-height: 180vh;
     width: 100vw;
     color: var(--cor-terciaria);
     background-color: var(--cor-principal);
